@@ -1,0 +1,161 @@
+.hero {
+  background: linear-gradient(diagonal, #b1e0ff,#7057fb,#ffffff,#beb3ff,#ffffff); /* Adjusted for extremely subtle, almost imperceptible cool-white gradient */
+  padding: 180px 0 100px 0; /* Adjusted top padding to account for floating header */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 75px;
+  color: #000000;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero h1 .highlight {
+  background: linear-gradient(to right, #664FE7, #664FE7); /* Purple gradient for highlight */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero .hero-para p{
+  font-size: 15px;
+}
+.hero p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.hero-buttons .button-primary {
+  background-color: #fff;
+  color: #8a2be2;
+  border: 1px solid #8a2be2;
+  padding: 15px 35px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.hero-buttons .button-primary:hover {
+  background-color: #8a2be2;
+  color: #fff;
+}
+
+.hero-buttons .button-secondary {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.hero-buttons .button-secondary:hover {
+  background-color: #333;
+}
+
+.hero-buttons .hero-waitlist-bubble-btn {
+  background: #00A881;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 18px 18px 18px 6px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.25s cubic-bezier(.4,0,.2,1);
+  position: relative;
+}
+.hero-buttons .hero-waitlist-bubble-btn:hover, .hero-buttons .hero-waitlist-bubble-btn:focus {
+  transform: scale(1.06) translateY(-2px);
+  box-shadow: 0 8px 24px rgba(123,63,255,0.13);
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 60vh;
+    padding: 120px 0 60px 0;
+    position: relative;
+  }
+  .hero .container {
+    padding: 40px 8px 32px 8px;
+    margin: 0 8px;
+    border-radius: 12px;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1.15;
+  }
+  .hero h1 .highlight {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  .hero p, .hero .hero-para p {
+    font-size: 1rem;
+    margin-bottom: 18px;
+    color: #666;
+    font-weight: 500;
+  }
+  .hero-buttons .button-primary, .hero-buttons .button-secondary, .hero-buttons .hero-waitlist-bubble-btn {
+    font-size: 0.95rem;
+    padding: 8px 0;
+    border-radius: 8px;
+    width: 80%;
+    margin: 0 auto 12px auto;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(123,63,255,0.08);
+    letter-spacing: 0.5px;
+    display: block;
+    transition: background 0.18s, box-shadow 0.18s, transform 0.18s;
+  }
+  .hero-buttons .button-primary:hover, .hero-buttons .button-secondary:hover, .hero-buttons .hero-waitlist-bubble-btn:hover,
+  .hero-buttons .button-primary:active, .hero-buttons .button-secondary:active, .hero-buttons .hero-waitlist-bubble-btn:active,
+  .hero-buttons .button-primary:focus, .hero-buttons .button-secondary:focus, .hero-buttons .hero-waitlist-bubble-btn:focus {
+    box-shadow: 0 4px 16px rgba(123,63,255,0.18);
+    transform: scale(1.05);
+  }
+  .hero-buttons .hero-waitlist-bubble-btn {
+    border-radius: 18px 18px 18px 6px !important;
+  }
+}
+
+@media (min-width: 601px) {
+  .hero-buttons .hero-waitlist-bubble-btn {
+    border-radius: 18px 18px 18px 6px !important;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+} 

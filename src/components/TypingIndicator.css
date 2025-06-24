@@ -1,0 +1,58 @@
+.typing-indicator-wrapper {
+  align-self: flex-start;
+  margin-bottom: 12px;
+}
+
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    padding: 0; 
+    border-radius: 0;
+  }
+  
+  .typing-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: #6557ff;
+    color: white;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+  
+  .typing-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .spinner {
+    border: 2px solid #e9ecef;
+    border-top: 2px solid #6c757d;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .typing-text-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .typing-text {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #495057;
+    white-space: nowrap;
+    transform: translateZ(0);
+  }
+  

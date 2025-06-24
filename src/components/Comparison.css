@@ -1,0 +1,162 @@
+.comparison {
+  padding: 100px 0 40px 0;
+  background-color: #fff;
+  position: relative;
+}
+
+.beginning{
+  text-align: center;
+  color: #fff;
+  background-color: #664FE7;
+  width: 100%;
+  padding: 18px 0;
+}
+
+.beginning h1{
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+.comparison .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.comparison-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.comparison-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.comparison-content {
+  flex: 1;
+  text-align: right;
+  max-width: 450px;
+}
+
+.comparison-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.comparison-image-card {
+  flex: 1;
+  background-color: #f0f4f8;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.35s cubic-bezier(.4,0,.2,1), box-shadow 0.35s cubic-bezier(.4,0,.2,1);
+}
+
+.comparison-image-card:hover, .comparison-image-card:focus {
+  transform: scale(1.045) translateY(-8px);
+  box-shadow: 0 12px 36px rgba(123,63,255,0.13), 0 2px 8px rgba(101,87,255,0.10);
+}
+
+.comparison-image-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: box-shadow 0.35s cubic-bezier(.4,0,.2,1), transform 0.35s cubic-bezier(.4,0,.2,1);
+}
+
+.comparison-image-card img:hover, .comparison-image-card img:focus {
+  transform: scale(1.04) translateY(-4px);
+  box-shadow: 0 8px 28px rgba(123,63,255,0.18);
+}
+
+.comparison-network-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 180px;
+  z-index: -1;
+  opacity: 0.38;
+  pointer-events: none;
+  user-select: none;
+  display: block;
+}
+@media (max-width: 900px) {
+  .comparison-network-bg {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .comparison {
+    padding: 40px 0 18px 0;
+  }
+  .comparison .container {
+    padding: 0 8px;
+    margin: 0 8px;
+  }
+  .comparison-item {
+    flex-direction: column !important;
+    gap: 10px;
+  }
+  .comparison-content h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  .comparison-image-card {
+    padding: 8px 2px;
+    border-radius: 8px;
+  }
+  .comparison-image-card img {
+    max-width: 98vw;
+    border-radius: 10px;
+  }
+  .comparison-network-bg {
+    display: none;
+  }
+  /* SearchBar mobile tweaks to match Strengths page */
+  .comparison-image-card .searchbar-container {
+    height: 42px;
+    min-height: 42px;
+    max-width: 92vw;
+    width: 92vw;
+    padding: 0 0 0 8px;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px 0 rgba(31,41,55,0.08);
+    margin: 8px 0 0 0;
+    overflow: visible;
+  }
+  .comparison-image-card .searchbar-input {
+    font-size: 15px;
+    width: 100%;
+    min-width: 0;
+    background: transparent;
+    padding-right: 36px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .comparison-image-card .searchbar-send-btn {
+    height: 38px;
+    width: 38px;
+    border-radius: 0 18px 18px 0;
+  }
+  .comparison-image-card .searchbar-label {
+    height: 28px;
+    font-size: 13px;
+    padding: 0 8px 0 6px;
+    margin-right: 6px;
+    text-align: center;
+  }
+} 

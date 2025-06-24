@@ -1,0 +1,186 @@
+.ratio {
+  padding: 100px 0 40px 0;
+  background-color: #f9fbfd;
+  position: relative;
+}
+
+.ratio .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.ratio-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.ratio-content {
+  flex: 1;
+  text-align: left;
+  max-width: 450px;
+}
+
+.ratio-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.ratio-image-card {
+  flex: 1;
+  background-color: #f0f4f8;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.35s cubic-bezier(.4,0,.2,1), box-shadow 0.35s cubic-bezier(.4,0,.2,1);
+}
+
+.ratio-image-card:hover, .ratio-image-card:focus {
+  transform: scale(1.045) translateY(-8px);
+  box-shadow: 0 12px 36px rgba(123,63,255,0.13), 0 2px 8px rgba(101,87,255,0.10);
+}
+
+.ratio-image-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: box-shadow 0.35s cubic-bezier(.4,0,.2,1), transform 0.35s cubic-bezier(.4,0,.2,1);
+}
+
+.ratio-image-card img:hover, .ratio-image-card img:focus {
+  transform: scale(1.04) translateY(-4px);
+  box-shadow: 0 8px 28px rgba(123,63,255,0.18);
+}
+
+.ratio-network-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 180px;
+  z-index: -1;
+  opacity: 0.38;
+  pointer-events: none;
+  user-select: none;
+  display: block;
+}
+
+.ratio-vector-chat {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  z-index: 1;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.ratio-framelock-svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 170px;
+  height: auto;
+  z-index: 2;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .ratio-network-bg {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .ratio {
+    padding: 60px 0 18px 0;
+  }
+  .ratio .container {
+    padding: 0 8px;
+    margin: 0 8px;
+  }
+  .beginning {
+    height: auto;
+    padding: 12px 0;
+    text-align: center;
+    background-color: #664FE7;
+    color: #fff;
+  }
+  .beginning h1 {
+    font-size: 1.15rem;
+    margin: 0;
+    line-height: 1.3;
+  }
+  .ratio-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .ratio-content h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  .ratio-image-card {
+    padding: 8px 2px;
+    border-radius: 8px;
+  }
+  .ratio-image-card img {
+    max-width: 98vw;
+    border-radius: 10px;
+  }
+  .ratio-network-bg {
+    display: none;
+  }
+  .ratio-vector-chat {
+    width: 48px;
+    height: 48px;
+    top: 8px;
+    left: 0;
+  }
+  .ratio-framelock-svg {
+    width: 60px;
+    left: 0;
+    bottom: 0;
+  }
+  /* SearchBar mobile tweaks to match Strengths page */
+  .ratio-image-card .searchbar-container {
+    height: 42px;
+    min-height: 42px;
+    max-width: 92vw;
+    width: 92vw;
+    padding: 0 0 0 8px;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px 0 rgba(31,41,55,0.08);
+    margin: 8px 0 0 0;
+    overflow: visible;
+  }
+  .ratio-image-card .searchbar-input {
+    font-size: 15px;
+    width: 100%;
+    min-width: 0;
+    background: transparent;
+    padding-right: 36px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .ratio-image-card .searchbar-send-btn {
+    height: 38px;
+    width: 38px;
+    border-radius: 0 18px 18px 0;
+  }
+  .ratio-image-card .searchbar-label {
+    height: 28px;
+    font-size: 13px;
+    padding: 0 8px 0 6px;
+    margin-right: 6px;
+    text-align: center;
+  }
+} 

@@ -1,0 +1,95 @@
+body {
+  background: linear-gradient(diagonal, #b1e0ff,#7057fb,#ffffff,#beb3ff,#ffffff);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.hero {
+  background: linear-gradient(120deg, #c8e7fc,#e1dcfd,#ffffff,#e2defa,#ffffff);
+}
+
+/* .about-me {
+  background: linear-gradient(120deg, #f4f2ff 0%, #f8f8ff 100%);
+} */
+
+.trust-me {
+  background: linear-gradient(120deg, #6557FF 0%, #f4f2ff 100%);
+}
+
+/* .business-intelligence {
+  background: linear-gradient(120deg, #f8f8ff 0%, #e2c7fd 100%);
+} */
+
+/* .ratio {
+  background: linear-gradient(120deg, #f4f2ff 0%, #f8f8ff 100%);
+}
+
+.comparison {
+  background: linear-gradient(120deg, #f8f8ff 0%, #e2c7fd 100%);
+} */
+
+.footer {
+  background: linear-gradient(120deg, #f4f2ff 0%, #f8f8ff 100%);
+}
+
+.preloader-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(120deg, #c8e7fc,#e1dcfd,#ffffff,#e2defa,#ffffff);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.4s cubic-bezier(.4,0,.2,1);
+}
+.preloader-logo {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #664FE7;
+  letter-spacing: -1.5px;
+  margin-bottom: 32px;
+  text-shadow: 0 2px 12px rgba(123,63,255,0.10);
+}
+.preloader-dot {
+  color: #664FE7;
+  font-size: 1.2em;
+  /* animation: preloader-dot-blink 1.2s infinite; */
+}
+@keyframes preloader-dot-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+.preloader-spinner {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.preloader-bounce {
+  width: 18px;
+  height: 18px;
+  background: #7B3FFF;
+  border-radius: 50%;
+  display: inline-block;
+  animation: preloader-bounce 1.2s infinite cubic-bezier(.4,0,.2,1);
+}
+.preloader-bounce:nth-child(2) {
+  background: #50C878;
+  animation-delay: 0.2s;
+}
+.preloader-bounce:nth-child(3) {
+  background: #7B3FFF;
+  animation-delay: 0.4s;
+}
+@keyframes preloader-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-22px); }
+} 

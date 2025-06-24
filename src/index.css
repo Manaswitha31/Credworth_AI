@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media (min-width: 601px) {
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .strengths,
+  .ratio,
+  .comparison,
+  .trust-me,
+  .waitlist,
+  .about-me {
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+}
